@@ -14,11 +14,25 @@ function ButtonScreen(props)
                 props.navigation.navigate('Home')
               }
             title="Go to HomeScreen"/>
-        <TouchableOpacity onPress={()=>props.navigation.navigate("List")}>
-            <Text>
-                Go to ListScreen   
-            </Text>
-        </TouchableOpacity>
+
+             <Button 
+            onPress={()=>
+                props.navigation.navigate('List')
+              }
+            title="Go to ListScreen"/>
+
+             <Button 
+            onPress={()=>
+                props.navigation.navigate('Image')
+              }
+            title="Go to ImageScreen"/>
+
+                <Button 
+            onPress={()=>
+                props.navigation.navigate('Counter')
+              }
+            title="Go to CounterScreen"/>
+
     </View>
     );
 }
