@@ -33,6 +33,12 @@ function ButtonScreen(props)
               }
             title="Go to CounterScreen"/>
 
+<Button 
+            onPress={()=>
+                props.navigation.navigate('Color')
+              }
+            title="Go to ColorScreen"/>
+
     </View>
     );
 }
