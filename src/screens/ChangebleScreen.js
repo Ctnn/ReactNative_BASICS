@@ -31,6 +31,11 @@ return (<View>
     <ButtonSection onMore={()=>setBlue(blue+1)} onLess={()=>setBlue(blue-1)} verilecekad="Blue"/>
 
 </View>
+
+<View style={{
+    height:150, 
+    width:150,
+    backgroundColor:`rgb(${red},${green}),${blue}`}}/>
 </View>);
 }
 const styles=StyleSheet.create({
