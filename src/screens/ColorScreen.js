@@ -1,18 +1,26 @@
 import React,{useState} from  'react';
-import { View,StyleSheet,Button } from 'react-native';
+import { View,StyleSheet,Button,FlatList } from 'react-native';
 
 function ColorScreen(){
 
     const [colors,setColors]=useState([]); //Başlangıç parametrem color olsun.
-   // console.log(colors);
+   // console.log(colors);asd
 
   return (<View>
     <Button title="Add a Color" onPress={()=>{
-        colors.push([...colors,randomRGB()]); //Setcolors'ı çağırmış oluyoruz.Ve 3 noktanın amacı array'in bütün içindekilere bak ve ona ekle
-        console.log(randomRGB)
+        setColors([...colors,randomRGB()]); //Setcolors'ı çağırmış oluyoruz.Ve 3 noktanın amacı array'in bütün içindekilere bak ve ona ekle
+      
     }}/>
+
   
-    <View style={{height:500,width:500,backgroundColor:randomRGB().toString() }}/>
+    <FlatList
+    keyExtractor={item=>item}
+    data={colors}
+    renderItem={({item})=>{
+//item ===`rgb(0,0,0)´
+      return   <View style={{height:500,width:500,backgroundColor:item }}/>
+    }}
+    />
   </View>);
 };
 

@@ -33,11 +33,17 @@ function ButtonScreen(props)
               }
             title="Go to CounterScreen"/>
 
-<Button 
+            <Button 
             onPress={()=>
                 props.navigation.navigate('Color')
               }
             title="Go to ColorScreen"/>
+
+<Button 
+            onPress={()=>
+                props.navigation.navigate('Changeble')
+              }
+            title="Go to ChangebleScreen"/>
 
     </View>
     );
