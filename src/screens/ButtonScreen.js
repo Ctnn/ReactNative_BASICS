@@ -45,6 +45,12 @@ function ButtonScreen(props)
               }
             title="Go to ChangebleScreen"/>
 
+<Button 
+            onPress={()=>
+                props.navigation.navigate('Input')
+              }
+            title="Go to InputScreen"/>
+
     </View>
     );
 }
