@@ -8,6 +8,7 @@ import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import ChangebleScreen from "./src/screens/ChangebleScreen";
 import InputScreen from "./src/screens/InputScreen";
+import BoxScreen from "./src/screens/BoxScreen";
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -18,6 +19,7 @@ const navigator = createStackNavigator(
     Color:ColorScreen,
     Changeble:ChangebleScreen,
     Input:InputScreen,
+    Box:BoxScreen,
   },
   {
     initialRouteName: "Buttons",

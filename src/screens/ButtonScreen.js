@@ -51,6 +51,12 @@ function ButtonScreen(props)
               }
             title="Go to InputScreen"/>
 
+<Button 
+            onPress={()=>
+                props.navigation.navigate('Box')
+              }
+            title="Go to BoxScreen"/>
+
     </View>
     );
 }
